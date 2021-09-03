@@ -1,4 +1,4 @@
-# {ProjectName}
+# ESP32Stereo
 
 Welcome to the source files!
 
