@@ -1,4 +1,4 @@
-update=09/02/21 21:00:38
+update=09/03/21 21:49:10
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=Libraries/Templates/stasis_a4.kicad_wks
+PageLayoutDescrFile=F:/Designs/Stasis/Development/KiCAD-Project-Template/Hardware Files/Libraries/Templates/stasis_a3.kicad_wks
 PlotDirectoryName=Output Files/Fabrication Files/
 SubpartIdSeparator=0
 SubpartFirstId=65
