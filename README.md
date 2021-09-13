@@ -9,6 +9,10 @@ Here you can find all the files and folders needed to replicate or redesign this
 
 This project is in early development
 
+I wanted to write down some ideas about designing this board.
+
+[See Notes]()
+
 # Documentation
 
 The documentation is unwritten for this project
