@@ -13,3 +13,5 @@ I think the basic features that should be on there I can copy from batteryboost:
 Maybe USB C?
 
 Can I make a diagram of the systems?
+
+<img src="https://raw.githubusercontent.com/stasiselectronics/ESP32Stereo/main/Hardware%20Files/Documentation/system_diagram.png" alt="System Diagram rev 1" width="500" height="600">
