@@ -14,7 +14,7 @@ Maybe USB C?
 
 Can I make a diagram of the systems?
 
-<img src="https://raw.githubusercontent.com/stasiselectronics/ESP32Stereo/main/Hardware%20Files/Documentation/system_diagram.png" alt="System Diagram rev 1" stlye="margin-left: auto;margin-right: auto;width: 50%;">
+<img src="https://raw.githubusercontent.com/stasiselectronics/ESP32Stereo/main/Hardware%20Files/Documentation/system_diagram.png" alt="System Diagram rev 1" stlye="margin-left: auto;margin-right: auto;max-width: 400 px;">
 
-"margin-left: auto;margin-right: auto;width: 50%;"
+
 
