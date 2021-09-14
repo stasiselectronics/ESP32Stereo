@@ -2181,4 +2181,110 @@ Connection ~ 14900 -8050
 Wire Wire Line
 	14100 -7850 14100 -8050
 Connection ~ 14100 -8050
+$Comp
+L .[--Stasis.Symbol.Library:PAM8406 U?
+U 1 1 6149776B
+P -4400 5650
+F 0 "U?" H -3725 5915 50  0000 C CNN
+F 1 "PAM8406" H -3725 5824 50  0000 C CNN
+F 2 "" H -4250 5750 50  0001 C CNN
+F 3 "" H -4250 5750 50  0001 C CNN
+	1    -4400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6149E054
+P -2800 6750
+F 0 "#PWR?" H -2800 6500 50  0001 C CNN
+F 1 "GND" H -2795 6577 50  0000 C CNN
+F 2 "" H -2800 6750 50  0001 C CNN
+F 3 "" H -2800 6750 50  0001 C CNN
+	1    -2800 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3050 6500 -2850 6500
+Wire Wire Line
+	-2800 6500 -2800 6750
+Wire Wire Line
+	-3050 6400 -2900 6400
+Wire Wire Line
+	-2850 6400 -2850 6500
+Connection ~ -2850 6500
+Wire Wire Line
+	-2850 6500 -2800 6500
+Wire Wire Line
+	-3050 6300 -2950 6300
+Wire Wire Line
+	-2900 6300 -2900 6400
+Connection ~ -2900 6400
+Wire Wire Line
+	-2900 6400 -2850 6400
+Wire Wire Line
+	-3050 6200 -2950 6200
+Wire Wire Line
+	-2950 6200 -2950 6300
+Connection ~ -2950 6300
+Wire Wire Line
+	-2950 6300 -2900 6300
+Text GLabel -4700 6050 0    50   Input ~ 0
+AUDIO_PRE_AMP_Left
+Wire Wire Line
+	-4700 6050 -4400 6050
+Text GLabel -4700 6150 0    50   Input ~ 0
+AUDIO_PRE_AMP_Right
+Wire Wire Line
+	-4700 6150 -4400 6150
+Wire Wire Line
+	-4400 5650 -4550 5650
+Wire Wire Line
+	-4400 5750 -4500 5750
+Wire Wire Line
+	-4550 5750 -4550 5650
+Connection ~ -4550 5650
+Wire Wire Line
+	-4550 5650 -4600 5650
+Wire Wire Line
+	-4400 5850 -4500 5850
+Wire Wire Line
+	-4500 5850 -4500 5750
+Connection ~ -4500 5750
+Wire Wire Line
+	-4500 5750 -4550 5750
+$Comp
+L power:+5V #PWR?
+U 1 1 6158DA8F
+P -4600 5450
+F 0 "#PWR?" H -4600 5300 50  0001 C CNN
+F 1 "+5V" H -4585 5623 50  0000 C CNN
+F 2 "" H -4600 5450 50  0001 C CNN
+F 3 "" H -4600 5450 50  0001 C CNN
+	1    -4600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-4600 5450 -4600 5650
+Text GLabel -4700 6400 0    50   Input ~ 0
+AMP_SHUTDOWN
+Wire Wire Line
+	-4700 6400 -4400 6400
+Text GLabel -4700 6500 0    50   Input ~ 0
+AMP_MUTE
+Wire Wire Line
+	-4700 6500 -4400 6500
+Text GLabel -2750 5900 2    50   Input ~ 0
+AUDIO_SPEAKER_Right_pos
+Wire Wire Line
+	-2750 5900 -3050 5900
+Text GLabel -2750 6000 2    50   Input ~ 0
+AUDIO_SPEAKER_Right_neg
+Text GLabel -2750 5650 2    50   Input ~ 0
+AUDIO_SPEAKER_Left_pos
+Text GLabel -2750 5750 2    50   Input ~ 0
+AUDIO_SPEAKER_Left_neg
+Wire Wire Line
+	-2750 5650 -3050 5650
+Wire Wire Line
+	-3050 5750 -2750 5750
 $EndSCHEMATC
