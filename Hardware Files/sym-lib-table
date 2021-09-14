@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ESP32Stereo)(type Legacy)(uri ${KIPRJMOD}/Libraries/Symbols/ESP32Stereo.lib)(options "")(descr ""))
+  (lib (name ESP32Stereo-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP32Stereo-rescue.lib)(options "")(descr ""))
 )

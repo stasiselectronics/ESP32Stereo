@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 3
+Sheet 1 1
 Title "ESP32 Stereo"
 Date "2021-09-03"
 Rev "A01"
@@ -13,121 +13,121 @@ Comment2 "CERN-OHL-S"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 18250 600  0    50   ~ 0
+Text Notes -2450 1500 0    50   ~ 0
 Digital to Analog Conversion
 $Comp
 L Analog_DAC:MCP4922 U?
 U 1 1 6135CA18
-P 18800 1500
-F 0 "U?" H 18450 1850 50  0000 C CNN
-F 1 "MCP4922" H 19050 1850 50  0000 C CNN
-F 2 "" H 19600 1200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H 19600 1200 50  0001 C CNN
-	1    18800 1500
+P -1900 2400
+F 0 "U?" H -2250 2750 50  0000 C CNN
+F 1 "MCP4922" H -1650 2750 50  0000 C CNN
+F 2 "" H -1100 2100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22250A.pdf" H -1100 2100 50  0001 C CNN
+	1    -1900 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 19450 1400 2    50   Input ~ 0
+Text GLabel -1250 2300 2    50   Input ~ 0
 DAC_Audio_Out_L
 Wire Wire Line
-	19450 1400 19300 1400
-Text GLabel 19450 1700 2    50   Input ~ 0
+	-1250 2300 -1400 2300
+Text GLabel -1250 2600 2    50   Input ~ 0
 DAC_Audio_Out_R
 Wire Wire Line
-	19450 1700 19300 1700
+	-1250 2600 -1400 2600
 Wire Wire Line
-	19300 1300 19400 1300
+	-1400 2200 -1300 2200
 Wire Wire Line
-	19300 1800 19400 1800
+	-1400 2700 -1300 2700
 $Comp
 L power:+5V #PWR?
 U 1 1 6136828D
-P 19400 1200
+P -1300 2100
 AR Path="/6132F4E4/6136828D" Ref="#PWR?"  Part="1" 
 AR Path="/6136828D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 19400 1050 50  0001 C CNN
-F 1 "+5V" H 19415 1373 50  0000 C CNN
-F 2 "" H 19400 1200 50  0001 C CNN
-F 3 "" H 19400 1200 50  0001 C CNN
-	1    19400 1200
+F 0 "#PWR?" H -1300 1950 50  0001 C CNN
+F 1 "+5V" H -1285 2273 50  0000 C CNN
+F 2 "" H -1300 2100 50  0001 C CNN
+F 3 "" H -1300 2100 50  0001 C CNN
+	1    -1300 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	19400 1200 19400 1300
+	-1300 2100 -1300 2200
 $Comp
 L power:+5V #PWR?
 U 1 1 6136A8C5
-P 19400 1900
+P -1300 2800
 AR Path="/6132F4E4/6136A8C5" Ref="#PWR?"  Part="1" 
 AR Path="/6136A8C5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 19400 1750 50  0001 C CNN
-F 1 "+5V" H 19415 2073 50  0000 C CNN
-F 2 "" H 19400 1900 50  0001 C CNN
-F 3 "" H 19400 1900 50  0001 C CNN
-	1    19400 1900
+F 0 "#PWR?" H -1300 2650 50  0001 C CNN
+F 1 "+5V" H -1285 2973 50  0000 C CNN
+F 2 "" H -1300 2800 50  0001 C CNN
+F 3 "" H -1300 2800 50  0001 C CNN
+	1    -1300 2800
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	19400 1800 19400 1900
+	-1300 2700 -1300 2800
 $Comp
 L power:+5V #PWR?
 U 1 1 6137268F
-P 18800 1000
+P -1900 1900
 AR Path="/6132F4E4/6137268F" Ref="#PWR?"  Part="1" 
 AR Path="/6137268F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 18800 850 50  0001 C CNN
-F 1 "+5V" H 18815 1173 50  0000 C CNN
-F 2 "" H 18800 1000 50  0001 C CNN
-F 3 "" H 18800 1000 50  0001 C CNN
-	1    18800 1000
+F 0 "#PWR?" H -1900 1750 50  0001 C CNN
+F 1 "+5V" H -1885 2073 50  0000 C CNN
+F 2 "" H -1900 1900 50  0001 C CNN
+F 3 "" H -1900 1900 50  0001 C CNN
+	1    -1900 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	18800 1000 18800 1100
+	-1900 1900 -1900 2000
 $Comp
 L power:GND #PWR?
 U 1 1 613765A8
-P 18800 2150
-F 0 "#PWR?" H 18800 1900 50  0001 C CNN
-F 1 "GND" H 18805 1977 50  0000 C CNN
-F 2 "" H 18800 2150 50  0001 C CNN
-F 3 "" H 18800 2150 50  0001 C CNN
-	1    18800 2150
+P -1900 3050
+F 0 "#PWR?" H -1900 2800 50  0001 C CNN
+F 1 "GND" H -1895 2877 50  0000 C CNN
+F 2 "" H -1900 3050 50  0001 C CNN
+F 3 "" H -1900 3050 50  0001 C CNN
+	1    -1900 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	18800 2000 18800 2150
-Text GLabel 18150 1500 0    50   Input ~ 0
+	-1900 2900 -1900 3050
+Text GLabel -2550 2400 0    50   Input ~ 0
 ESP32_SPI_SCK
 Wire Wire Line
-	18150 1500 18300 1500
+	-2550 2400 -2400 2400
 $Comp
 L power:GND #PWR?
 U 1 1 61382E4B
-P 18200 1950
-F 0 "#PWR?" H 18200 1700 50  0001 C CNN
-F 1 "GND" H 18205 1777 50  0000 C CNN
-F 2 "" H 18200 1950 50  0001 C CNN
-F 3 "" H 18200 1950 50  0001 C CNN
-	1    18200 1950
+P -2500 2850
+F 0 "#PWR?" H -2500 2600 50  0001 C CNN
+F 1 "GND" H -2495 2677 50  0000 C CNN
+F 2 "" H -2500 2850 50  0001 C CNN
+F 3 "" H -2500 2850 50  0001 C CNN
+	1    -2500 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	18200 1950 18200 1800
+	-2500 2850 -2500 2700
 Wire Wire Line
-	18200 1800 18300 1800
-Text GLabel 18100 1700 0    50   Input ~ 0
+	-2500 2700 -2400 2700
+Text GLabel -2600 2600 0    50   Input ~ 0
 ESP32_SPI_MOSI
 Wire Wire Line
-	18300 1700 18100 1700
+	-2400 2600 -2600 2600
 Wire Wire Line
-	18300 1600 18200 1600
+	-2400 2500 -2500 2500
 Wire Wire Line
-	18200 1600 18200 1800
-Connection ~ 18200 1800
-Text GLabel 18150 1300 0    50   Input ~ 0
+	-2500 2500 -2500 2700
+Connection ~ -2500 2700
+Text GLabel -2550 2200 0    50   Input ~ 0
 DAC_Shutdown_Control
 Wire Wire Line
-	18150 1300 18300 1300
+	-2550 2200 -2400 2200
 $Comp
 L power:+5V #PWR?
 U 1 1 613404D1
@@ -216,12 +216,12 @@ Wire Wire Line
 Text Notes 18850 5150 0    157  ~ 0
 Battery Charger
 $Comp
-L BatteryBoost:TP4056 U?
+L ESP32Stereo-rescue:TP4056-BatteryBoost U?
 U 1 1 61340501
 P 20150 6200
 F 0 "U?" H 20575 6765 50  0000 C CNN
 F 1 "TP4056" H 20575 6674 50  0000 C CNN
-F 2 "BatteryBoost:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 20150 6200 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 20150 6200 50  0001 C CNN
 F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf" H 20150 6200 50  0001 C CNN
 F 4 "C16581" H 20150 6200 50  0001 C CNN "OC"
 	1    20150 6200
@@ -245,7 +245,7 @@ U 1 1 6134050F
 P 17950 6100
 F 0 "J?" H 18007 6567 50  0000 C CNN
 F 1 "USB_B_Micro" H 18007 6476 50  0000 C CNN
-F 2 "BatteryBoost:U-F-M5DD-Y-L" H 18100 6050 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:U-F-M5DD-Y-L" H 18100 6050 50  0001 C CNN
 F 3 "~" H 18100 6050 50  0001 C CNN
 F 4 "C91146" H 17950 6100 50  0001 C CNN "OC"
 	1    17950 6100
@@ -402,18 +402,6 @@ Text Notes 17700 3300 0    98   ~ 0
 Things to add
 Text Notes 17950 4000 0    98   ~ 0
 - Battery Sense to ADC\n- Battery Reverse Polarity Protection\n- Audio Amplifier\n- Audio Multiplexer
-$Sheet
-S 18150 9000 1500 1900
-U 61413B1F
-F0 "BatteryBoost" 50
-F1 "BatteryBoost.sch" 50
-$EndSheet
-$Sheet
-S 20150 9000 1200 1750
-U 613FC7B6
-F0 "HotPlateController" 50
-F1 "HotPlateController.sch" 50
-$EndSheet
 $Comp
 L Device:R R?
 U 1 1 6142BFA9
@@ -1404,12 +1392,12 @@ Wire Wire Line
 Wire Wire Line
 	13300 -2600 13650 -2600
 $Comp
-L BatteryBoost:TP4056 U?
+L .[--Stasis.Symbol.Library:TP4056 U?
 U 1 1 614A2CB8
 P 4300 -6800
 F 0 "U?" H 4725 -6235 50  0000 C CNN
 F 1 "TP4056" H 4725 -6326 50  0000 C CNN
-F 2 "BatteryBoost:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4300 -6800 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 4300 -6800 50  0001 C CNN
 F 3 "https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf" H 4300 -6800 50  0001 C CNN
 F 4 "C16581" H 4300 -6800 50  0001 C CNN "OC"
 	1    4300 -6800
@@ -1433,7 +1421,7 @@ U 1 1 614A2CC6
 P 2050 -3500
 F 0 "J?" H 2130 -3508 50  0000 L CNN
 F 1 "Battery" H 2130 -3599 50  0000 L CNN
-F 2 "BatteryBoost:WJ124-3.81-2P" H 2050 -3500 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:WJ124-3.81-2P" H 2050 -3500 50  0001 C CNN
 F 3 "~" H 2050 -3500 50  0001 C CNN
 F 4 "C69811" H 2050 -3500 50  0001 C CNN "OC"
 	1    2050 -3500
@@ -1445,7 +1433,7 @@ U 1 1 614A2CCD
 P 2100 -6900
 F 0 "J?" H 2157 -6433 50  0000 C CNN
 F 1 "USB_B_Micro" H 2157 -6524 50  0000 C CNN
-F 2 "BatteryBoost:U-F-M5DD-Y-L" H 2250 -6950 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:U-F-M5DD-Y-L" H 2250 -6950 50  0001 C CNN
 F 3 "~" H 2250 -6950 50  0001 C CNN
 F 4 "C91146" H 2100 -6900 50  0001 C CNN "OC"
 	1    2100 -6900
@@ -1512,12 +1500,12 @@ F 4 "Do Not Order" H 14600 -8250 50  0001 C CNN "OC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L BatteryBoost:Q_PMOS Q?
+L ESP32Stereo-rescue:Q_PMOS-BatteryBoost Q?
 U 1 1 614A2CF7
 P 3050 -3400
 F 0 "Q?" V 3300 -3500 50  0000 L CNN
 F 1 "-30V 12A 14mΩ @ 8A" V 3400 -3500 50  0000 L CNN
-F 2 "BatteryBoost:SOP-8_3.9x4.9mm_P1.27mm" H 3250 -3300 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:SOP-8_3.9x4.9mm_P1.27mm" H 3250 -3300 50  0001 C CNN
 F 3 "~" H 3050 -3400 50  0001 C CNN
 F 4 "C155319" V 3050 -3400 50  0001 C CNN "OC"
 	1    3050 -3400
@@ -1614,7 +1602,7 @@ U 1 1 614A2D30
 P 9750 -7650
 F 0 "L?" V 9569 -7650 50  0000 C CNN
 F 1 "150uH ±20% 2.15A 280mΩ" V 9660 -7650 50  0000 C CNN
-F 2 "BatteryBoost:Inductor_SLH_12x12x8_HandSolder" H 9750 -7650 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:Inductor_SLH_12x12x8_HandSolder" H 9750 -7650 50  0001 C CNN
 F 3 "~" H 9750 -7650 50  0001 C CNN
 F 4 "C338769" V 9750 -7650 50  0001 C CNN "OC"
 	1    9750 -7650
@@ -1638,7 +1626,7 @@ U 1 1 614A2D3E
 P 15100 -5100
 F 0 "J?" H 15180 -5108 50  0000 L CNN
 F 1 "Output" H 15180 -5199 50  0000 L CNN
-F 2 "BatteryBoost:WJ124-3.81-2P" H 15100 -5100 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:WJ124-3.81-2P" H 15100 -5100 50  0001 C CNN
 F 3 "~" H 15100 -5100 50  0001 C CNN
 F 4 "C69811" H 15100 -5100 50  0001 C CNN "OC"
 	1    15100 -5100
@@ -1662,7 +1650,7 @@ U 1 1 614A2D4D
 P 14200 -5100
 F 0 "L?" V 14500 -5000 50  0000 R CNN
 F 1 "1uH ±20% 3.29A 59mΩ" V 14400 -5000 50  0000 R CNN
-F 2 "BatteryBoost:L_2.5x2.0_Hand_Solder" H 14200 -5100 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:L_2.5x2.0_Hand_Solder" H 14200 -5100 50  0001 C CNN
 F 3 "~" H 14200 -5100 50  0001 C CNN
 F 4 "C275672" V 14200 -5100 50  0001 C CNN "OC"
 F 5 "" V 14200 -5100 50  0001 C CNN "Note"
@@ -1706,7 +1694,7 @@ F 4 "C137380" H 9000 -7100 50  0001 C CNN "OC"
 	0    1    1    0   
 $EndComp
 $Comp
-L BatteryBoost:SP34063AEN U?
+L .[--Stasis.Symbol.Library:SP34063AEN U?
 U 1 1 614A2D69
 P 9350 -7100
 F 0 "U?" H 9750 -6835 50  0000 C CNN
@@ -1818,12 +1806,12 @@ F 4 "C136460" H 13300 -2350 50  0001 C CNN "OC"
 	1    0    0    1   
 $EndComp
 $Comp
-L BatteryBoost:Q_PMOS Q?
+L ESP32Stereo-rescue:Q_PMOS-BatteryBoost Q?
 U 1 1 614A2DAC
 P 13850 -2600
 F 0 "Q?" H 14150 -2650 50  0000 C CNN
 F 1 "-30V 12A 14mΩ @ 8A" H 14800 -2550 50  0000 C CNN
-F 2 "BatteryBoost:SOP-8_3.9x4.9mm_P1.27mm" H 14050 -2500 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:SOP-8_3.9x4.9mm_P1.27mm" H 14050 -2500 50  0001 C CNN
 F 3 "~" H 13850 -2600 50  0001 C CNN
 F 4 "C155319" V 13850 -2600 50  0001 C CNN "OC"
 	1    13850 -2600
@@ -1835,7 +1823,7 @@ U 1 1 614A2DB3
 P 8600 -3000
 F 0 "RV?" H 8530 -2954 50  0000 R CNN
 F 1 "Variable Resistors 500kΩ ±10%" H 8530 -3045 50  0000 R CNN
-F 2 "BatteryBoost:Potentiometer_3296W-1-504" H 8600 -3000 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:Potentiometer_3296W-1-504" H 8600 -3000 50  0001 C CNN
 F 3 "~" H 8600 -3000 50  0001 C CNN
 F 4 "C118921" H 8600 -3000 50  0001 C CNN "OC"
 	1    8600 -3000
@@ -1867,7 +1855,7 @@ $EndComp
 Wire Wire Line
 	14450 -2150 14750 -2150
 $Comp
-L BatteryBoost:AP9101CK6 U?
+L .[--Stasis.Symbol.Library:AP9101CK6 U?
 U 1 1 614A2DC8
 P 4900 -3400
 F 0 "U?" H 5250 -3150 50  0000 R CNN
@@ -1956,7 +1944,7 @@ Connection ~ 3400 -3500
 Wire Wire Line
 	3400 -3500 3500 -3500
 $Comp
-L BatteryBoost:Q_DUAL_NMOS Q?
+L ESP32Stereo-rescue:Q_DUAL_NMOS-BatteryBoost Q?
 U 1 1 614A2DFA
 P 4350 -2700
 F 0 "Q?" V 4633 -2650 50  0000 C CNN
@@ -1968,7 +1956,7 @@ F 4 "C154558" V 4815 -2650 50  0001 C CNN "OC"
 	0    1    1    0   
 $EndComp
 $Comp
-L BatteryBoost:Q_DUAL_NMOS Q?
+L ESP32Stereo-rescue:Q_DUAL_NMOS-BatteryBoost Q?
 U 2 1 614A2E01
 P 5150 -2700
 F 0 "Q?" V 5433 -2650 50  0000 C CNN
@@ -2061,7 +2049,7 @@ U 1 1 614A2E33
 P 14250 -2050
 F 0 "SW?" H 14250 -1765 50  0000 C CNN
 F 1 "SW_SPDT" H 14250 -1856 50  0000 C CNN
-F 2 "BatteryBoost:Switch_SS-12D06L5" H 14250 -2050 50  0001 C CNN
+F 2 ".[--Stasis.Footprints.Library:Switch_SS-12D06L5" H 14250 -2050 50  0001 C CNN
 F 3 "~" H 14250 -2050 50  0001 C CNN
 F 4 "C319015" H 14250 -2050 50  0001 C CNN "OC"
 	1    14250 -2050
