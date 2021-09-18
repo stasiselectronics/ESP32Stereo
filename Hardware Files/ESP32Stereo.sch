@@ -442,16 +442,6 @@ F 3 "" H 8850 1525 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8850 1400 8850 1525
-Text GLabel 2400 1900 2    50   Input ~ 0
-HotLED
-Text GLabel 2400 1800 2    50   Input ~ 0
-StatusLED
-Text GLabel 2400 1200 2    50   Input ~ 0
-UserSwitch
-Text GLabel 2400 3500 2    50   Input ~ 0
-V_Current_adj
-Wire Wire Line
-	2150 3500 2400 3500
 $Comp
 L power:GND #PWR?
 U 1 1 6142C079
@@ -472,10 +462,6 @@ Wire Wire Line
 	1550 3800 1550 3950
 Wire Wire Line
 	700  1200 950  1200
-Text GLabel 2400 2100 2    50   Input ~ 0
-U0TX_Active
-Wire Wire Line
-	2150 2100 2400 2100
 Wire Wire Line
 	1550 850  1550 1000
 $Comp
@@ -497,8 +483,6 @@ F 6 "C82899" H 1550 2400 50  0001 C CNN "MF 1 Ordering Code"
 	1    1550 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 1900 2400 1900
 $Comp
 L power:GND #PWR?
 U 1 1 6142C08F
@@ -536,20 +520,10 @@ Wire Wire Line
 	6150 1200 6550 1200
 Wire Wire Line
 	6150 1100 6550 1100
-Text GLabel 2400 1400 2    50   Input ~ 0
-PlateControl
-Wire Wire Line
-	2400 1400 2150 1400
-Wire Wire Line
-	2150 1800 2400 1800
 Text GLabel 2400 1300 2    50   Input ~ 0
 USB_RX
 Wire Wire Line
 	2150 1300 2400 1300
-Text GLabel 2400 2500 2    50   Input ~ 0
-ESP32_SPI_MISO
-Text GLabel 2400 2800 2    50   Input ~ 0
-ESP32_SPI_TEMPSENSOR_1_CS
 Text GLabel 2400 1500 2    50   Input ~ 0
 USB_TX
 Wire Wire Line
@@ -558,18 +532,10 @@ Text GLabel 2400 1700 2    50   Input ~ 0
 ESP32_SPI_SCK
 Wire Wire Line
 	2150 1700 2400 1700
-Wire Wire Line
-	2150 2500 2400 2500
-Wire Wire Line
-	2150 2800 2400 2800
 Text GLabel 5100 3400 0    50   Input ~ 0
-IO0
+Boot_Mode_Select
 Text GLabel 700  1200 0    50   Input ~ 0
 EN
-Wire Wire Line
-	2400 3400 2150 3400
-Text GLabel 2400 3400 2    50   Input ~ 0
-5V_adj
 $Comp
 L power:+5V #PWR?
 U 1 1 614A2BE3
@@ -1071,7 +1037,7 @@ F 4 "Do Not Order" H 14600 -8250 50  0001 C CNN "OC"
 	-1   0    0    1   
 $EndComp
 $Comp
-L ESP32Stereo-rescue:Q_PMOS-BatteryBoost Q?
+L .[--Stasis.Symbol.Library:Q_PMOS Q?
 U 1 1 614A2CF7
 P 3050 -3400
 F 0 "Q?" V 3300 -3500 50  0000 L CNN
@@ -1515,7 +1481,7 @@ Connection ~ 3400 -3500
 Wire Wire Line
 	3400 -3500 3500 -3500
 $Comp
-L ESP32Stereo-rescue:Q_DUAL_NMOS-BatteryBoost Q?
+L .[--Stasis.Symbol.Library:Q_DUAL_NMOS Q?
 U 1 1 614A2DFA
 P 4350 -2700
 F 0 "Q?" V 4633 -2650 50  0000 C CNN
@@ -1525,18 +1491,6 @@ F 3 "~" H 4550 -2700 50  0001 C CNN
 F 4 "C154558" V 4815 -2650 50  0001 C CNN "OC"
 	1    4350 -2700
 	0    1    1    0   
-$EndComp
-$Comp
-L ESP32Stereo-rescue:Q_DUAL_NMOS-BatteryBoost Q?
-U 2 1 614A2E01
-P 5150 -2700
-F 0 "Q?" V 5433 -2650 50  0000 C CNN
-F 1 "20V 7.5A 24mΩ @ 2.5Vgs" V 5524 -2650 50  0001 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 -2700 50  0001 C CNN
-F 3 "~" H 5350 -2700 50  0001 C CNN
-F 4 "C154558" V 5615 -2650 50  0001 C CNN "OC"
-	2    5150 -2700
-	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	4350 -2900 4350 -3000
@@ -2822,4 +2776,32 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 13350 8400 50  0001 C CNN
 	1    13350 8400
 	1    0    0    1   
 $EndComp
+$Comp
+L .[--Stasis.Symbol.Library:Q_DUAL_NMOS Q?
+U 2 1 6148F9E7
+P 5150 -2700
+F 0 "Q?" V 5433 -2650 50  0000 C CNN
+F 1 "20V 7.5A 24mΩ @ 2.5Vgs" V 5524 -2650 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5350 -2700 50  0001 C CNN
+F 3 "~" H 5350 -2700 50  0001 C CNN
+F 4 "C154558" V 5615 -2650 50  0001 C CNN "OC"
+	2    5150 -2700
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2150 2100 2400 2100
+Text GLabel 2400 2100 2    50   Input ~ 0
+U0TX_Active
+Text GLabel 2400 1200 2    50   Input ~ 0
+Boot_Mode_Select
+Wire Notes Line
+	1050 2250 850  2250
+Wire Notes Line
+	850  2250 850  3050
+Wire Notes Line
+	850  3050 1050 3050
+Text Notes 700  3000 1    50   ~ 0
+Internal SPI FLASH
+Text Notes 800  3000 1    50   ~ 0
+Do not use
 $EndSCHEMATC
